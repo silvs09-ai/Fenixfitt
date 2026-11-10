@@ -95,10 +95,12 @@ table{width:100%;border-collapse:collapse;margin:0 0 20px}
 td{padding:10px 0;border-bottom:1px solid var(--line)}
 td:last-child{text-align:right;color:var(--yel)}
 form.ct{display:grid;gap:14px}
-footer{border-top:1px solid var(--line);padding:30px 0 170px;color:var(--mut);font-size:.92rem;text-align:center}
-.fab{position:fixed;right:16px;bottom:calc(88px + env(safe-area-inset-bottom,0px));z-index:70;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:pulse 2.4s infinite}
+footer{border-top:1px solid var(--line);padding:30px 0 220px;color:var(--mut);font-size:.92rem;text-align:center}
+.fab{position:fixed;right:16px;bottom:calc(144px + env(safe-area-inset-bottom,0px));z-index:70;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.5);animation:pulse 2.4s infinite}
 .fab svg{width:32px;height:32px}
-.fab.map{bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--org);animation:pulse2 2.4s infinite}
+.fab.map{bottom:calc(76px + env(safe-area-inset-bottom,0px));background:var(--org);animation:pulse2 2.4s infinite}
+.fab.ig{bottom:calc(8px + env(safe-area-inset-bottom,0px));background:linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);animation:pulse3 2.4s infinite}
+@keyframes pulse3{0%{box-shadow:0 0 0 0 rgba(214,41,118,.55)}70%,100%{box-shadow:0 0 0 18px rgba(214,41,118,0)}}
 @keyframes pulse2{0%{box-shadow:0 0 0 0 rgba(255,210,31,.55)}70%,100%{box-shadow:0 0 0 18px rgba(255,210,31,0)}}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6)}70%,100%{box-shadow:0 0 0 18px rgba(37,211,102,0)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
@@ -260,6 +262,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 170px;color:var(--mut);fo
 
 <a class="fab wa" data-msg="Olá! Vim pelo site e gostaria de mais informações." href="https://wa.me/5512982243757" aria-label="Chamar no WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3a13 13 0 0 0-11 19.8L3 29l6.2-1.9A13 13 0 1 0 16 3z"/><path fill="#25d366" d="M12 9.5c-.8 0-1.800 1.200-1.800 2.800 0 4 5.200 9.200 9.500 9.200 1.600 0 2.800-1 2.800-1.800l-3.200-1.800-1.800 1.200-4.200-4.200 1.200-1.800L14 9.500z"/></svg></a>
 <a class="fab map" href="https://www.google.com/maps/search/?api=1&amp;query=Academia+F%C3%AAnix+Fit+Extreme+R.+Padre+Juc%C3%A1+32+Jacare%C3%AD+SP" target="_blank" rel="noopener noreferrer" aria-label="Ver localização no Google Maps"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#111" d="M16 3a9 9 0 0 0-9 9c0 7 9 17 9 17s9-10 9-17a9 9 0 0 0-9-9z"/><circle cx="16" cy="12" r="3.5" fill="#ffd21f"/></svg></a>
+<a class="fab ig" href="https://www.instagram.com/academia_fenix_fit" target="_blank" rel="noopener noreferrer" aria-label="Abrir o Instagram da academia"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="6" width="20" height="20" rx="6" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="16" cy="16" r="4.6" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="22" cy="10" r="1.5" fill="#fff"/></svg></a>
 
 <script>
 (function(){
